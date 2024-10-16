@@ -1,0 +1,85 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.Mother
+{
+    background-color: darkslategrey;
+    min-height: 100vh;
+    width: 100%;
+    padding: 10px;
+}
+.Child
+{
+    width: 100%;
+    max-width: 600px;
+    background-color: wheat;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 15px;
+}
+.Child h2{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.Gchild
+{
+    background-color: white;
+    box-shadow: 0px 0px 5px white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+#tb
+{
+    flex: 1;
+    border: transparent;
+    border-radius: 10px;
+    color: rgb(255, 123, 0);
+    padding: 10px;
+}
+button{
+    border: transparent;
+    padding: 16px 30px;
+    color: white;
+    background-color: green;
+    border-radius: 15px;
+    cursor: pointer;
+}
+ul li{
+    list-style: none;
+    padding: 12px 8px 12px 40px;
+    user-select: none;cursor: pointer;
+    /* color: azure; */
+    position: relative;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-image: url(circle-shape-doodle-outline-colouring_1639-30821.avif);
+    background-size: cover;
+    top: 12px;
+    left: 8px;
+
+}
+ul li.tick{
+    color: red;
+    text-decoration: line-through;
+}
+ul li.tick::before{
+    background-image: url(vector-green-check-mark-icon-symbol-logo-circle-tick-symbol-green-color-vector-illustration_488400-331.avif);
+}
+ul li span{
+    position: absolute;
+    right: 0%;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+}
